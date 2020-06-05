@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 150px;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.box {
+  width:40%;
+  position: relative;
+  border:1px solid #000;
+  border-radius: 15px;
+  background-color: cadetblue;
+  margin-top: 15px;  
+}
+
+tr {
+  width:100%;
+  border-radius:10px !important;
+}
+
+table tr:not(:first-child):hover {
+  background-color: #8fcccc;
+}
+
+table td:first-child {
+  word-break: break-all;
+}
+
+table tr:last-child:hover td:first-child {
+  border-bottom-left-radius: 15px;
+}
+table tr:last-child:hover td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.add-button {
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  background-color: cadetblue; /* Green */
+  border: none;
+  color: black;
+  padding: 11px;  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  transition-duration: 0.8s;
+  margin-right: 25px;
+}
+
+.add-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.add-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.input-box {
+  width: 50%;
+  padding: 10px 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+  margin: 4px 0;
+  color: white;
+  box-sizing: border-box;
+  background-color: #282c34;
+  border-radius: 10px 0px 0px 10px; 
+}
+
+.search-box {
+  width: 30%;
+  padding: 10px 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+  margin: 4px 0;
+  color: white;
+  box-sizing: border-box;
+  background-color: #282c34;
+  border-radius: 10px;
+}
+
+.clear-button {
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: cadetblue; /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.my-handle {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
+
+.clear-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.heading {
+  color: #282c34;
+}
+
+span {
+  cursor: pointer;  
+}
+
+ul {
+  list-style-type: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    width:90%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .box {
+    width:75%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .box {
+    width:60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box {
+    width:50%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .box {
+    width:40%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .box {
+    width:30%;
+  }
+}
